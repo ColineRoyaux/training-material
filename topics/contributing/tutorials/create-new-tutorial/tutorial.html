@@ -5,16 +5,6 @@
         <meta http-equiv="x-ua-compatible" content="ie=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>Creating a new tutorial</title>
-        
-            <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-45719423-18' , 'auto');
-    ga('send', 'pageview');
-</script>
-        
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap.min.css?v=3">
         <link rel="stylesheet" href="/training-material/assets/css/bootstrap-toc.min.css">
         <link rel="stylesheet" href="/training-material/assets/css/main.css?v=2">
@@ -146,6 +136,9 @@
                 </label>
                 <label data-value="halloween" class="btn btn-secondary">
                     <input type="radio" name="options" id="halloween" autocomplete="off"> 🎃
+                </label>
+                <label data-value="straya" class="btn btn-secondary">
+                    <input type="radio" name="options" id="downunder" autocomplete="off"> 🇦🇺
                 </label>
             </div>
 
@@ -301,7 +294,7 @@
 
         <div class="contributors-line">By: 
 
-<a href="/training-material/hall-of-fame/bebatut/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/bebatut" alt="Bérénice Batut">Bérénice Batut</a>, <a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/hexylena" alt="Helena Rasche">Helena Rasche</a>, <a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/shiltemann" alt="Saskia Hiltemann">Saskia Hiltemann</a>, <a href="/training-material/hall-of-fame/lldelisle/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/lldelisle" alt="Lucille Delisle">Lucille Delisle</a>
+ <a href="/training-material/hall-of-fame/bebatut/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/bebatut" alt="Bérénice Batut">Bérénice Batut</a> <a href="/training-material/hall-of-fame/hexylena/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/hexylena" alt="Helena Rasche">Helena Rasche</a> <a href="/training-material/hall-of-fame/shiltemann/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/shiltemann" alt="Saskia Hiltemann">Saskia Hiltemann</a> <a href="/training-material/hall-of-fame/lldelisle/" class="contributor-badge"><img src="https://avatars.githubusercontent.com/lldelisle" alt="Lucille Delisle">Lucille Delisle</a>
 
 </div>
 
@@ -351,8 +344,8 @@
             <ul>
                 <div class="supporting_material">
                 
-                    <li class="btn btn-default supporting_material"><a href="/training-material/topics/contributing/slides/introduction.html" title="Introduction slides">
-                        <i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> Introduction slides
+                    <li class="btn btn-default supporting_material"><a href="/training-material/topics/contributing/slides/introduction.html" title="Topic Overview slides">
+                        <i class="fab fa-slideshare" aria-hidden="true"></i><span class="visually-hidden">slides</span> Topic Overview slides
                     </a></li>
                 
 
@@ -502,6 +495,10 @@
     
         
     
+        
+    
+        
+    
     </ul>
 
 
@@ -511,7 +508,7 @@
             </ul>
             
 
-            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Jul 13, 2020 </p>
+            <p><strong> <i class="far fa-calendar" aria-hidden="true"></i><span class="visually-hidden">last_modification</span> Last modification:</strong> Dec 14, 2020 </p>
         </blockquote>
 
         <div class="container">
@@ -710,7 +707,7 @@ It may require some knowledge that you may not have or do not have the time to l
   </li>
 </ul>
 
-<p>We would then develop the tutorial and test it on this toy dataset. Once we were ready to share it, we would upload the datasets on <a href="https://zenodo.org/">Zenodo</a> to store them on long-term and obtain a dedicated DOI in the <a href="https://zenodo.org/communities/galaxy-training/?page=1&amp;size=20"><span class="notranslate">Galaxy</span> training network community</a>.</p>
+<p>We would then develop the tutorial and test it on this toy dataset. Once we were ready to share it, we would upload the datasets to <a href="https://zenodo.org/">Zenodo</a> to store them on long-term and obtain a dedicated DOI in the <a href="https://zenodo.org/communities/galaxy-training/?page=1&amp;size=20"><span class="notranslate">Galaxy</span> training network community</a>.</p>
 
 <blockquote class="notranslate hands_on">
   <h3 id="hands_on-hands-on-upload-the-dataset-to-zenodo"><i class="fas fa-pencil-alt" aria-hidden="true"></i><span class="visually-hidden">hands_on</span> Hands-on: Upload the dataset to Zenodo</h3>
@@ -764,7 +761,7 @@ So be careful when you start your upload that all your needed files are ready.</
 
 <h1 id="add-some-technical-support-recommended">Add some technical support (recommended)</h1>
 
-<p>To able to run the tutorial, we need a <span class="notranslate">Galaxy</span> instance where the needed tools and the data are available. We need then to describe the required technical infrastructure. Tools are installed based on the workflows in the <code class="language-plaintext highlighter-rouge">workflows</code> directory.</p>
+<p>To be able to run the tutorial, we need a <span class="notranslate">Galaxy</span> instance where the needed tools and the data are available. We need then to describe the required technical infrastructure. Tools are installed based on the workflows in the <code class="language-plaintext highlighter-rouge">workflows</code> directory.</p>
 
 <p>This description will be used to automatically set up a Docker <span class="notranslate">Galaxy</span> flavour, to set up an existing <span class="notranslate">Galaxy</span> instance and also to test if a public <span class="notranslate">Galaxy</span> instance is able to run the tool.</p>
 
@@ -810,7 +807,7 @@ So be careful when you start your upload that all your needed files are ready.</
   <li>Determine the topic</li>
   <li>Create the directory for the tutorial</li>
   <li>Add some metadata</li>
-  <li>Find a good toy dataset and upload it on Zenodo</li>
+  <li>Find a good toy dataset and upload it to Zenodo</li>
   <li>Write the tutorial</li>
   <li>Add some technical support (recommended)</li>
   <li>Add slides (optional)</li>
@@ -824,7 +821,7 @@ So be careful when you start your upload that all your needed files are ready.</
   <ol>
     <li>Determine the topic</li>
     <li>Create your <span class="notranslate">workflow</span> on a running <span class="notranslate">Galaxy</span> instance</li>
-    <li>Add the topic name as Tag and the tutorial title as Annotation/Notes to the <span class="notranslate">workflow</span> using the <span class="notranslate">workflow</span> editor.</li>
+    <li>Add the topic name as a Tag and the tutorial title as Annotation/Notes to the <span class="notranslate">workflow</span> using the <span class="notranslate">workflow</span> editor.</li>
     <li>Create a Zenodo record with the input data</li>
     <li>Generate the skeleton of your tutorial
       <ul>
@@ -849,7 +846,7 @@ So be careful when you start your upload that all your needed files are ready.</
        --<span class="notranslate">workflow</span> "path/to/<span class="notranslate">workflow</span>" \
        --zenodo_link "URL to the Zenodo record"
 </code></pre></div>          </div>
-          <p>You can use the example <span class="notranslate">workflow</span> file located in <code class="language-plaintext highlighter-rouge">topics/contributing/tutorials/create-new-tutorial/workflows/example-<span class="notranslate">workflow</span>.ga</code> if
+          <p>You can use the example <span class="notranslate">workflow</span> file located at <code class="language-plaintext highlighter-rouge">topics/contributing/tutorials/create-new-tutorial/workflows/example-<span class="notranslate">workflow</span>.ga</code> if
 you do not have a <span class="notranslate">workflow</span> of your own. This is the <span class="notranslate">workflow</span> belonging to the <em><span class="notranslate">Galaxy</span> 101</em> introduction tutorial.</p>
         </li>
       </ul>
@@ -934,8 +931,8 @@ you do not have a <span class="notranslate">workflow</span> of your own. This is
     author = "Bérénice Batut and Helena Rasche and Saskia Hiltemann and Lucille Delisle",
     title = "Creating a new tutorial (Galaxy Training Materials)",
     year = "2020",
-    month = "07",
-    day = "13"
+    month = "12",
+    day = "14"
     url = "\url{/training-material/topics/contributing/tutorials/create-new-tutorial/tutorial.html}",
     note = "[Online; accessed TODAY]"
 }
@@ -1018,7 +1015,7 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                 
                     
                         
-            <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-tours/tutorial.html">Creating a new tutorial - Creating Interactive Galaxy Tours</a></li>
+            <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html">Creating content in Markdown</a></li>
                         
                     
                 
@@ -1026,7 +1023,7 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                 
                     
                         
-            <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-technical/tutorial.html">Creating a new tutorial - Defining the technical infrastructure</a></li>
+            <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-tours/tutorial.html">Creating Interactive Galaxy Tours</a></li>
                         
                     
                 
@@ -1034,15 +1031,7 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                 
                     
                         
-            <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-slides/slides.html">Creating a new tutorial - Slides</a></li>
-                        
-                    
-                
-            
-                
-                    
-                        
-            <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-content/tutorial.html">Creating a new tutorial - Writing content in Markdown</a></li>
+            <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-slides/slides.html">Creating Slides</a></li>
                         
                     
                 
@@ -1067,6 +1056,14 @@ document.getElementById("citation-text").innerHTML = document.getElementById("ci
                     
                         
             <li><a href="/training-material/topics/contributing/tutorials/running-jekyll/tutorial.html">Running the Galaxy Training material website locally</a></li>
+                        
+                    
+                
+            
+                
+                    
+                        
+            <li><a href="/training-material/topics/contributing/tutorials/create-new-tutorial-technical/tutorial.html">Tools, Data, and Workflows for tutorials</a></li>
                         
                     
                 
